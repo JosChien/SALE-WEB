@@ -1,0 +1,935 @@
+body
+{
+    margin:0;
+    background:whitesmoke
+}
+.clearfix
+{
+    clear: both;
+}
+.my-header
+{
+    background:#0095ff;
+    position: relative;
+}
+.my-header2
+{   position: absolute;
+    background: white;
+    box-shadow:1px 5px 5px #80808026;
+    width: 100%
+}
+.my-container
+{
+    width: 1230px;
+    margin-left:auto;
+    margin-right: auto;
+    position: relative
+}
+.my-header .my-logo
+{
+    width: 6%;
+    height: 46px;
+    float: left;
+    margin: 2px 55px 2px 62px
+}
+.my-header .my-container .my-logo img
+{
+    max-width: 100%;
+    max-height: 100%;
+    cursor: pointer;
+}
+.Inventory
+{
+    width: 12%;
+    background: #0000ff40;
+    height: 35px;
+    margin-top: 7px;
+    margin-right:18px;
+    border-radius: 4px;
+    float: left;
+}
+input, 
+textarea{
+    outline:none
+}
+#see
+{
+    font-size: 11px;
+    color: #ffffffc7;
+    padding-top: 1px;
+    padding-left: 5px
+}
+#City
+{
+    font-size: 12px;
+    font-weight: bold;
+    color: white;
+    padding-left: 3px;
+    cursor: pointer;
+    width: 94%
+}
+.Finder
+{
+    width: 36%;
+    height: 35px;
+    margin-top: 7px;
+    margin-right: 18px;
+    background: white;
+    border-radius: 4px;
+    float: left;
+}
+ #City .downer
+{
+    font-size: 15px;
+    float: right
+}
+.Finder .Find-child
+{
+    color: black;
+    margin: 0 0 0 5px;
+    height: 100%;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    font-size: 15px;
+    float: left;
+    width: 93%
+}
+.Finder .search
+{
+    font-size: 20px;
+    color: #0000004d;
+    cursor: pointer;
+    float: left;
+    margin-top: 3px
+}
+.history
+{
+    width: 10%;
+    height: 35px;
+    background: #0000ff40;
+    color: white;
+    font-size: 13px;
+    border-radius: 4px;
+    cursor: pointer;
+    float: left;
+    margin-top: 7px; 
+    margin-right: 19px;
+    text-align: center;
+    line-height: 35px
+}
+.history p{
+    margin:0;
+}
+.arrow-up {
+    width: 0;
+    height: 0;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-bottom: 7px solid white;
+    margin-left: 56px;
+    display: none
+}
+.my-container .history #child
+{
+    display: none;
+    position: absolute;
+    height: 194px;
+    width: 100%;
+    background: white;
+    z-index: 200;
+    left: 0;
+    box-shadow: 3px 7px 16px 4px #80808049;
+    overflow: auto;
+    color:black
+}
+.my-container .history:hover #child,
+.my-container .history:hover .arrow-up{
+    display: block
+}
+.history #child ul{
+    margin:0;
+    padding:0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+} 
+.history #child .nope{
+    font-size: 30px;
+    line-height:180px;
+    color: #00000040;
+}
+.history #child ul li{
+    width: 12.5%;
+    padding: 0 8px
+}
+.history #child .my-picture{
+    height:85px;
+    margin-top:5px
+}
+.history #child .info{
+    line-height: 22px;
+    font-size: 12px;
+}
+.history #child .info-product .discount{
+    color:red
+}
+.my-container .infomation 
+{
+    width: 11%;
+    float: left;
+    margin-top: 3px;
+    left: 965px;
+    cursor: pointer;
+}
+.my-container .number
+{
+    font-size: 15px;
+    color: white;
+    font-weight: bold
+}
+.my-container .TD
+{
+    font-size: 14px;
+    color:#ffffffdb;
+}
+.my-container .infomation2 
+{
+    width: 11%;
+    margin-top: 3px;
+    float: left;
+    cursor: pointer;
+    position: relative
+}
+.my-container .menuchild 
+{
+    background: white;
+    position: absolute;
+    width: 100%;
+    height:0;
+    list-style: none;
+    padding:0;
+    margin:0;
+    top:100%;
+    box-shadow: 3px 7px 16px 4px #80808049;
+    overflow: hidden;   
+}
+.my-container .menuchild li
+{
+    padding: 6px;
+}
+.my-container .infomation2:hover .menuchild
+{
+    height:175%;
+    z-index: 200;
+    transition: 0.5s ease-in-out;
+
+}
+.my-container .menuchild li:hover
+{
+    color: #119ed8;
+}
+.my-header2 .list
+{
+    width: 240px;
+    height: 100%;
+    position: relative;
+    background: white;
+    box-shadow: 0.1px 0.2px 6.2px #8080807d;
+    cursor: pointer;
+    float: left
+}
+.my-header2 .list .icon.menu
+{
+    font-size: 16px;
+    padding-left:11px;
+    color:#000000c4;
+}
+.my-header2 .list .name
+{
+    display: inline-block;
+    padding:21px 24px 7px 3px;
+    font-family: sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    color: #000000bd
+}
+.my-header2 .list .down 
+{
+    font-size: 21px;
+    padding-top: 10px;
+    color: #000000a3;
+    margin-left: 13px
+}
+.my-header2 #my-list
+{
+    margin: 0px;
+    padding: 0;
+    position: absolute;
+    width: 240px;
+    list-style: none;
+    background: white;
+    box-shadow: 3px 7px 25px 4px #8080803b;
+    top:50px;
+    z-index:200;
+    display: none
+}
+.my-header2 .list:hover #my-list{
+    display: block
+} 
+.my-header2 #my-list>li
+{
+    height: 31px;
+    width:100%;
+    cursor: pointer;
+    background:white;
+    padding:0 5px
+}
+.my-header2 #my-list .my-lister
+{
+    height: 100%;
+    border-bottom: 0.5px solid #00000038;
+}
+.my-header2 #my-list>li:hover
+{
+    font-weight: bold;
+    border-left: 3px solid #1a8dde
+}
+.my-header2 #my-list .icon
+{
+    position: relative;
+    width: 22px;
+    color: #00000094;
+    height: 20px;
+    display: inline-block;
+    padding-left:5px;
+} 
+.my-header2 #my-list a:hover{
+    color:#1a8dde;
+}
+.my-header2 #my-list .icon img
+{
+    width: 100%;
+    height: 100%;
+    padding-top: 5px;
+    position: absolute
+}
+.my-header2 #my-list p
+{
+    display: inline-block;
+    margin-bottom: 0;
+    padding-top:5px;
+   color: #000000db;
+   font-size:14px;
+   padding-left:10px
+}
+.my-header2 #my-list .righte
+{
+    float:right;
+    color: #0000006b;
+    padding-top:4px;
+}
+.my-header2 #my-list .submenu.A
+{
+    display:none;
+    background:white;
+    left:100%;
+    top:0;
+    width: 498px;
+    height:372px;
+    z-index: 500;
+    position: absolute;
+    cursor: default;
+    box-shadow: 0px 3px 2px 0px #80808049;
+}
+.my-header2 #my-list ul{
+   padding:0; 
+   list-style: none;
+   float:left;
+   width: 42%
+}
+.my-header2 #my-list .subp{
+    padding-top: 10px;
+    margin: 0;
+    font-size:12px
+}
+.my-header2 #my-list .suba{
+    margin-left:10px;
+    color:#119ed8;
+    font-size: 13px;
+    cursor: pointer;
+}
+.my-header2 #my-list .sub1{
+    border-bottom:1px solid #06030330;
+    margin-bottom: 10px;
+    margin-left:20px
+}
+.my-header2 #my-list .submenu{
+    font-weight:normal
+}
+.my-header2 #my-list .submenu li {
+    font-size: 15px;
+    width: 100%;
+    margin-left: 20px;
+    padding: 4px 0
+}
+.my-header2 #my-list .submenu li:hover{
+    color:#119ed8
+}
+.my-header2 #my-list .submenu.B
+{
+    display:none;
+    width: 475px;
+    height:372px;
+    background: white;
+    left:100%;
+    top:0;
+    z-index: 500;
+    position: absolute;
+    cursor: default;
+    box-shadow: 0px 3px 2px 0px #80808049;
+}
+.my-header2 #my-list .submenu.C
+{
+    display:none;
+    width: 477px;
+    height:372px;
+    background:white;
+    left:100%;
+    top:0;
+    z-index: 500;
+    position: absolute;
+    cursor: default;
+    box-shadow: 0px 3px 2px 0px #80808049;
+}
+.my-header2 #my-list .submenu.D
+{
+    display:none;
+    width: 510px;
+    height:372px;
+    background: white;
+    left:100%;
+    top:0;
+    z-index: 500;
+    position: absolute;
+    cursor: default;
+    box-shadow: 0px 3px 2px 0px #80808049;
+}
+.my-header2 #my-list .submenu.E
+{   
+    display: none;
+    width: 390px;
+    height:372px;
+    background: white;
+    left:100%;
+    top:0;
+    z-index: 500;
+    position: absolute;
+    cursor: default;
+    box-shadow: 0px 3px 2px 0px #80808049;
+}
+.my-header2 #my-list .submenu.F
+{
+    display:none;
+    width: 542px;
+    height:372px;
+    background: white;
+    left:100%;
+    top:0;
+    z-index: 500;
+    position: absolute;
+    cursor: default;
+    box-shadow: 0px 3px 2px 0px #80808049;
+}
+.my-header2 #my-list .submenu.G
+{
+    display:none;
+    width: 475px;
+    height:372px;
+    background: white;
+    left:100%;
+    top:0;
+    position: absolute;
+    cursor: default;
+    z-index: 500;
+    box-shadow: 0px 3px 2px 0px #80808049;
+}
+.my-header2 #my-list .submenu.H
+{
+    display:none;
+    width: 690px;
+    height:372px;
+    background: white;
+    left:100%;
+    top:0;
+    z-index: 500;
+    position: absolute;
+    cursor: default;
+    box-shadow: 0px 3px 2px 0px #80808049;
+}
+.my-header2 #my-list .submenu.I
+{
+    display:none;
+    width: 483px;
+    height:372px;
+    background: white;
+    left:100%;
+    top:0;
+    position: absolute;
+    cursor: default;
+    z-index: 500;
+    box-shadow: 0px 3px 2px 0px #80808049;
+}
+.my-header2 #my-list .submenu.K
+{
+    display:none;
+    width: 730px;
+    height:372px;
+    background: white;
+    left:100%;
+    top:0;
+    position: absolute;
+    cursor: default;
+    z-index: 500;
+    box-shadow: 0px 3px 2px 0px #80808049;
+}
+
+.my-header2 #my-list .submenu.L
+{
+    display:none;
+    width: 630px;
+    height:372px;
+    background: white;
+    left:100%;
+    top:0;
+    position: absolute;
+    cursor: default;
+    z-index: 500;
+    box-shadow: 0px 3px 2px 0px #80808049;
+}
+.my-header2 .baner
+{
+    float: left;
+    width: 960px;
+    margin-top: 11px;
+    margin-left: 20px;
+    font-size: 16px
+}
+#content{
+    margin-top: 52px;
+    background: white
+}
+/*phần sản phẩm*/
+.product-content{
+    border-bottom: 1px solid #80808045;
+    margin-bottom: 20px;
+}
+.product-content>h3{
+    padding-top: 20px;
+    border-bottom: 1px solid #80808045;
+    margin-bottom: 25px
+}
+.product-content .colu1
+{
+    width: 37%;
+    float:left
+}
+.product-content .colu2
+{
+    width: 42%;
+    float:left
+}
+.product-content .colu3
+{
+    width:21%;
+    float:left
+ }
+ .product-content .my-picture
+{
+    width: 100%;
+    height:300px;
+}
+.colu1 h6{
+    margin:5px 0;
+}
+.colu1 .slick-track{
+    display: flex;
+    align-items: center;
+}
+.colu1 ul{
+    padding: 0 0 0 20px;
+    margin: 0;
+    list-style: disc;
+    font-size: 15px;
+}
+.colu2{
+    padding: 0 10px
+}
+.colu2 .find{
+    padding:10px
+}
+.colu2 .find span{
+    color: blue;
+    cursor: pointer;
+    padding: 0 5px;
+}
+.colu2 .find>p{
+    margin:0;
+    font-size: 25px;
+    display: inline-block
+}
+.colu2 h5{
+    padding: 0;
+    margin: 0;
+    background: #ca1616;
+    color: white;
+    display: flex;
+    justify-content: center;
+    height: 47px;
+    align-items: center;
+    border-radius:5px 5px 0 0; 
+}
+.colu2 h4{
+    background: #8080802b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #c12929;
+    height: 40px;
+    padding: 0;
+    border-radius: 0 0 5px 5px;
+}
+.colu2 span{
+    color:red
+}
+.colu2 p a{
+    color: blue;
+    text-decoration: none
+}
+.colu2 .KM p{
+    font-size: 20px;
+    font-weight: bold;
+    background: #8080800f;
+    margin: 0;
+    padding: 15px;
+    border: 1px solid #0000002e;
+    border-radius: 5px 5px 0 0;
+    border-bottom: none
+}
+.colu2 ul{
+    padding: 5px 0 5px 25px;
+    border: 1px solid #0000002e;
+    border-radius: 0 0 5px 5px;
+    list-style: square;
+}
+.colu2 .area-order{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    margin-bottom: 15px 
+}
+.colu2 .buy{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background: orangered;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+.colu2 .area-order p{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 0;
+    padding-top: 10px;
+    color: white;
+    font-family: unset
+}
+.colu2 .area-order span{
+    font-size:14px;
+    color:white
+}
+.colu2 .area-order .card{
+    width: 48%;
+    background: #0000ff99;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.colu2 .note{
+    background: none;
+    border: none;
+}
+.colu2 .noter p{
+    margin: 0;
+    font-weight: bold;
+    font-size: 15px
+}
+.colu2 .note li{
+    padding-left:10px;
+}
+#content .my-container .local
+{
+    color: #16b7dc;
+    border: 1px solid #80808045;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    font-size: 15px;
+    cursor: pointer;
+    font-family: initial
+}
+.colu3 .Care{
+    border: 1px solid #0000002e;
+    border-radius: 5px;
+}
+.colu3 .Care h4{
+    text-align: center;
+    color: green;
+    text-transform: uppercase;
+    font-size: 17px;
+    font-family: inherit; 
+    padding-top:20px;
+}
+.colu3 .Care ul{
+    padding: 0;
+    list-style: none
+}
+.colu3 .Care li{
+    width: 90%;
+    margin:5px auto;
+    border-bottom: 1px solid #0000002e;
+    display: flex;
+    align-items: center;
+}
+.colu3 .Care span{
+    color: darkseagreen;
+    font-size: 32px
+}
+.colu3 .Care p{
+    display: inline-block;
+    padding-left: 10px;
+    font-size: 15px;
+    margin:0
+}
+.colu3 .Care ul .final{
+    border: none;
+}
+.colu3 .Care .after li{
+    align-items: baseline
+}
+.colu3 .Care .after span{
+    color:skyblue;
+    font-size: 16px;
+}
+.inf-content{
+    display: flex;
+    flex-wrap: wrap
+}
+.details1,
+.details2
+{
+    width: 65%;
+}
+.details1 .img-product{
+    width: 100%;
+    height: 500px;
+    margin-bottom: 20px
+}
+.details{
+    width: 35%;
+}
+.details h5{
+    text-transform: uppercase
+}
+.details ul{
+    margin: 0;
+    padding:0;
+    list-style: none;
+}
+.details li{
+    display: flex;
+    align-items: center;
+}
+.details span{
+    color: blue
+}
+.details p{
+    margin: 0;
+    padding: 5px 10px
+}
+.details li:nth-child(2n-1){
+    background: #8080802b; 
+}
+.details .see-details{
+    border-radius:5px;
+    border:1px solid blue;
+    text-align: center;
+    padding:5px;
+    margin-top:15px;
+    cursor: pointer;
+}
+.details2 .img-product1{
+    height:300px;
+    width: 80%;
+    margin: 0 auto 10px;
+}
+.details2 .add,
+.details2 .add2{
+    border-bottom: 1px solid #80808045;
+    text-align: center;
+    padding-bottom: 20px;
+     margin-bottom: 15px
+}
+.details2 .details2-child{
+    height:410px;
+    overflow: hidden;
+}
+.details2 .add p{
+    border: 1px solid blue;
+    border-radius: 5px;
+    padding: 4px;
+    text-align: center;
+    display: inline-block;
+    margin: 0;
+    width: 25%;
+    color: blue;
+    cursor: pointer
+}
+.details2 .note p{
+    font-size: 20px;
+    color: #e67b0c;
+    margin: 0
+}
+.details2 .note .note-add{
+    padding:0;
+    list-style: none;
+    overflow: hidden;
+    height: 55px;
+}
+.details2 .note li::before{
+    content: "-";
+    padding-left:10px;
+    font-size: 20px;
+    padding-right: 10px
+}
+.inf-content .add2 span{
+    font-size: 16px;
+    color: blue;
+    cursor: pointer;
+}
+.comment {
+    width: 65%
+}
+.comment p{
+    float:left;
+}
+.comment .find-comment{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: right;
+    border: 1px solid #00000061;
+    border-radius: 5px
+}
+.comment .find-comment span{
+    font-size: 20px;
+    color: #00000061;
+    padding-left: 3px;
+}
+.comment .find-comment input{
+border: none;
+padding: 2px;
+width: 200px
+}
+.comment .button{
+    text-align: center;
+    font-size: 13px;
+    margin-bottom: 20px;
+}
+.comment .button button{
+    margin-right: 2px;
+    cursor: pointer
+}
+.comment .fin1{
+    width: 100%;
+    padding: 10px 0 100px 10px;
+    border-radius: 5px;
+    border: 1px solid #00000061
+}
+.comment .task{
+    display: flex; 
+    padding-bottom: 20px
+}
+.comment .task .sent-image{
+    border: 0.5px solid #00000061;
+    font-size: 15px;
+    width: 15%;
+    margin: 0;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.comment .task .form{
+    border:0.5px solid #00000061;
+    width: 85%;
+}
+.comment .task form{
+    padding: 6px 0 6px 65px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+.comment .form .send{
+    width: 16%;
+    background: #22a1d282;
+}
+.comment .form .name{
+    width: 32%;
+}
+.comment .form .email{
+    width: 32%
+}
+.footer
+{
+    background: white;
+}
+.footer .foot
+{ 
+    float:left;
+    margin: 10px 30px 20px 0;
+}
+.footer p
+{
+    font-size:14px;
+    margin:5px 5px 0 0;
+    color: #089ad6;
+    cursor: pointer;
+}
+.footer p:hover{
+    color:#666;
+}
+.footer .foot.phone p{
+    font-size:14px;
+    margin:5px 5px 0 0;
+    color:black;
+    cursor: inherit;
+}
+.footer .foot.phone b:hover{
+    color:#666;
+    cursor: pointer;
+}
+.footer span{
+    font-weight: bold;
+    color:#15303b;
+}
+.foot.social .fab{
+    font-size:50px
+}

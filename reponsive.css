@@ -1,0 +1,252 @@
+.iphone{
+    display:none;
+}
+.desktop{
+    display:block;
+}
+@media all and (max-width:425px){
+.iphone{
+    display:block;
+}
+.desktop{
+    display:none;
+}
+    .my-container
+{
+    width: 100%;
+    position: relative;
+}
+.my-header .my-logo
+{
+    width: 15%;
+    height: 40px;
+    padding-top: 2px;
+    float: left;
+    margin: 2px 5px;
+}
+.Finder{
+    width: 73%;
+    height: 32px;
+    margin-top: 6px;
+    margin-right: 5px;
+    background: white;
+    border-radius: 4px;
+    float: left;
+}
+ .Finder .Find-child{
+    color: black;
+    margin: 0 0 0 5px;
+    height: 100%;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    font-size: 15px;
+    float: left;
+    width: 88%
+}
+.bars-menu-child{
+    position: absolute;
+    background: whitesmoke;
+    z-index: 200;
+    width: 100%;
+    height: 0;
+    transition: 1s ease-in-out;
+    overflow: hidden;
+}
+.bars-menu-child ul{
+    margin: 0;
+    padding: 0;
+    list-style: none
+}
+.bars-menu-child .Cancel{
+    font-size: 24px;
+    padding: 8px;
+}
+.bars-menu-child ul>p{
+    margin: 0 0 0 90px;
+    display: inline-block;
+    font-size: 25px
+}
+.bars-menu-child ul li{
+    border-top: 1px solid white;
+}
+.bars-menu-child .icon{
+    display: inline-block;
+    padding:3px 12px
+}
+.bars-menu-child .icon img{
+    width: 30px;
+    height: auto
+}
+.bars-menu-child .name2{
+    margin: 0;
+    display: inline-block;
+    font-size:15px
+}
+.bars-menu-child .righte{
+    float:right;
+    padding:6px
+}
+.active-bars{
+    height: 370px;
+    transition: 1s ease-in-out
+}
+.Finder .search{
+    
+    font-size: 20px;
+    color: #0000004d;
+    cursor: pointer;
+    float: left;
+    margin-top: 1px
+}
+.bars-menu{
+    font-size: 28px;
+    float: left;
+    margin-top: 1px;
+    color: white
+}
+.my-slide{
+    width: 100%;
+    margin-top:0px;
+    margin-left:0 
+}
+.LocalIn{
+    background: #0ec7e4;
+    padding: 5px 20px 5px 20px;
+    font-size: 12px
+}   
+.LocalIn p{
+    margin:0;
+}
+.LocalIn span{
+    float:right
+}
+.customHeightMobie{
+    height: 175px;
+}
+.content{
+    margin-top:6px;
+}
+.content li:nth-child(3n+3){
+    border-right: none
+}
+.content #menu {
+  padding: 5px;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.content #menu a {
+  margin: 3px;
+  height: 28px;
+  width: 21%;
+  text-align: center;
+  font-size: 9px;
+  line-height: 28px;
+  border: 0.5px solid #0999d4;
+  border-radius: 5px;
+  background: whitesmoke
+}
+#gid ul{
+    border-top: 1px solid whitesmoke
+}
+.content li {
+    background: white;
+    border-right: 1px solid whitesmoke;
+    border-bottom: 1px solid whitesmoke;
+    padding: 0;
+    cursor: pointer;
+    width: 33.333%;
+    max-width: 33.333%
+}
+content li:nth-child(3n+3) {
+    border-right: none;
+}
+.content .my-layout .my-picture {
+    height: 100px;
+    width: 100px;
+    margin: 10px auto 0 auto;
+}
+.content .my-layout .info {
+    margin:0;
+    padding:5px;
+    max-width: 123px
+}
+.content .my-layout .product-name,
+.content .my-layout .bonus {
+    font-size: 12px;
+    font-family: sans-serif;
+    line-height: 20px;
+    -webkit-line-clamp: 2;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    height: 40px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical
+}
+.content .my-layout .discount {
+    margin: 2px 0;
+    font-size: 12px;
+    color: red;
+    font-weight: bold;
+}
+.content .my-layout .price {
+    margin: 2px 0;
+    font-size: 12px;
+    color: #0000006b;
+}
+.content .button{
+    width: 70%;
+    height:30px;
+    line-height: 30px;
+    font-size: 12px;
+    margin: 8px 0
+}
+.my-container h5{
+    font-size: small;
+    padding-left: 10px;
+    margin-top: 8px;
+    margin-bottom: 8px
+}
+.my-container .button2{
+    width: 20%;
+    height: 24px;
+    padding-top: 2px;
+    margin:5px 0 5px 10px;
+    font-size: 12px;
+    box-shadow: 1px 1px 1px gray;
+}
+.my-videos{
+    background: white;
+    padding-bottom: 10px
+}
+.parent-video{
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom: 1px solid whitesmoke;
+    padding:5px 0;
+    display: flex
+}
+.video-child{
+    height: 70px;
+}
+.video-child iframe{
+    width: 150px
+}
+.parent-video p{
+    margin-left: 20px;
+    font-size: 15px;
+    font-family: initial;
+    margin-bottom: 0
+}
+.last{
+    border: 0
+}
+/*footer*/
+.footer{
+    margin-top:10px
+}
+.footer .foot{
+    margin: 10px 0 0 15px;
+}
+}

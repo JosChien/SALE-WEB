@@ -1,0 +1,308 @@
+.iphone{
+    display:none;
+}
+.desktop{
+    display:block;
+}
+@media all and (max-width:425px){
+.iphone{
+    display:block;
+}
+.desktop{
+    display:none;
+}
+    .my-container
+{
+    width: 100%;
+    position: relative;
+}
+.my-header .my-logo
+{
+    width: 15%;
+    height: 40px;
+    padding-top: 2px;
+    float: left;
+    margin: 2px 5px;
+}
+.Finder{
+    width: 73%;
+    height: 32px;
+    margin-top: 6px;
+    margin-right: 5px;
+    background: white;
+    border-radius: 4px;
+    float: left;
+}
+ .Finder .Find-child{
+    color: black;
+    margin: 0 0 0 5px;
+    height: 100%;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    font-size: 15px;
+    float: left;
+    width: 88%
+}
+.bars-menu-child{
+    position: absolute;
+    background: whitesmoke;
+    z-index: 200;
+    width: 100%;
+    height: 0;
+    transition: 1s ease-in-out;
+    overflow: hidden;
+}
+.bars-menu-child ul{
+    margin: 0;
+    padding: 0;
+    list-style: none
+}
+.bars-menu-child .Cancel{
+    font-size: 24px;
+    padding: 8px;
+}
+.bars-menu-child ul>p{
+    margin: 0 0 0 90px;
+    display: inline-block;
+    font-size: 25px
+}
+.bars-menu-child ul li{
+    border-top: 1px solid white;
+}
+.bars-menu-child .icon{
+    display: inline-block;
+    padding:3px 12px
+}
+.bars-menu-child .icon img{
+    width: 30px;
+    height: auto
+}
+.bars-menu-child .name2{
+    margin: 0;
+    display: inline-block;
+    font-size:15px
+}
+.bars-menu-child .righte{
+    float:right;
+    padding:6px
+}
+.active-bars{
+    height: 370px;
+    transition: 1s ease-in-out
+}
+.Finder .search{
+    
+    font-size: 20px;
+    color: #0000004d;
+    cursor: pointer;
+    float: left;
+    margin-top: 1px
+}
+.bars-menu{
+    font-size: 28px;
+    float: left;
+    margin-top: 1px;
+    color: white
+}
+.LocalIn{
+    background: #0ec7e4;
+    padding: 5px 0px 5px 20px;
+    font-size: 12px
+}   
+.LocalIn p{
+    margin:0;
+}
+.LocalIn span{
+    margin-left: 80px;
+}
+#content{
+    margin-top:6px;
+}
+.product-content{
+margin-bottom: 0
+}
+.product-content>h3{
+    font-size:20px;
+    padding:5px
+}
+.product-content .colu1{
+    width: 100%;
+}
+.product-content .colu2{
+    width: 100%;
+}
+.colu2 .find{
+    font-size:14px;
+}
+.colu2 .find>p{
+    font-size: 20px
+}
+.colu2 h5{
+    font-size:18px;
+    height: 35px
+}
+.colu2 h4{
+    height: 35px;
+    font-size: 22px
+}
+.colu2>p{
+    font-size: 14px
+}
+.colu2 .KM>p{
+    font-size: 15px;
+}
+.colu2 .KM>ul{
+    padding-left: 25px;
+    font-size: 14px;
+    margin-bottom:8px
+}
+.colu2 .area-order{
+    margin-bottom: 10px
+}
+.colu2 .area-order .buy>p{
+    font-size: 15px;
+    padding-top:5px
+}
+.colu2 .area-order .buy>span{
+    padding-bottom: 5px
+}
+.colu2 .area-order .card{
+    margin-top: 7px
+}
+.colu2 .area-order .card>p{
+    padding-top: 5px;
+    font-size: 13px
+}
+.colu2 .noter>p{
+    font-size: 14px
+}
+.colu2 .noter .note{
+    font-size: 14px;
+    padding: 0 19px;
+    margin-bottom: 5px;
+}
+.colu2 .noter .note li{
+    padding:0
+}
+.product-content .colu3{
+    width: 100%;
+    padding: 0 10px;
+    margin-bottom: 20px
+}
+.colu3 .Care{
+    background: whitesmoke
+}
+.colu3 .Care h4{
+    padding-top:12px;
+    font-size: 16px
+}
+.colu3 .Care>ul{
+    margin-bottom: 5px;
+}
+.colu3 .Care ul>li{
+    width: 93%
+}
+.colu3 .Care ul li>span{
+    font-size: 22px
+}
+.colu3 .Care ul li>p{
+    font-size: 14px
+}
+.colu3 .Care .after{
+    margin-bottom: 15px
+}
+.colu3 .Care .after span{
+    font-size: 15px
+}
+.colu3 .Care .after p{
+    font-size: 14px
+}
+.details1,
+.details2{
+    width: 100%;
+    padding: 0 10px
+}
+.details1 .img-product{
+    width: 100%;
+    height: 300px
+}
+.details{
+    width: 100%;
+    padding: 0 10px
+}
+.details h5{
+    font-size: 16px
+}
+.details li{
+    font-size: 14px
+}
+.details .see-details{
+    margin: 10px 45px;
+    font-size: 14px
+}
+.details2 h4{
+    font-size: 15px;
+    margin: 0
+}
+.details2 p{
+    font-size: 14px
+}
+.details2 .img-product1{
+    width: 100%;
+    height: 200px
+}
+.details2 .add,
+.details2 .add2{
+    padding-bottom: 0;
+    margin-bottom: 10px
+}
+.details2 .add p{
+    font-size: 13px;
+    padding: 5px;
+    margin-bottom: 7px
+}
+.details2 .note p {
+    font-size: 16px;
+    margin: 0
+}
+.details2 .note .note-add{
+    font-size: 14px;
+    margin:0;
+}
+.details2 .note span{
+    font-size: 14px
+}
+.comment{
+    width: 100%;
+    padding: 0 10px
+}
+.comment p{
+    font-size: 14px
+}
+.comment .find-comment>span{
+    font-size: 15px
+}
+.comment .find-comment input{
+    width: 150px;
+    font-size: 14px
+}
+.comment .button{
+    font-size: 10px;
+    margin-bottom: 10px
+}
+.comment .fin1{
+    padding-bottom: 40px;
+    font-size: 12px
+}
+/*footer*/
+.footer .foot{
+    margin: 10px 0 0 15px;
+    width: 100%
+}
+ .foot {
+    font-size: 14px
+}
+.foot p{
+    font-size: 13px
+}
+}

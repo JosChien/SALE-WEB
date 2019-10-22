@@ -1,0 +1,940 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link type='text/css' href="deproject.css" rel="stylesheet">
+    <link type='text/css' href="dereponsive.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="slick-theme.css" />
+    <link rel="stylesheet" type="text/css" href="slick.css" />
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <title>Tủ lạnh</title>
+</head>
+
+<body>
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header" style="border-bottom:none">
+                    <h6 class="modal-title" id="exampleModalLabel">Chọn tỉnh thành: </h6>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-child"
+                        style="display: flex;justify-content: space-between;border: 1px solid black;padding: 8px 10px;border-radius: 5px; cursor:pointer">
+                        <p style="margin:0"> Tp. Hồ Chí Minh</p>
+                        <i class="fas fa-chevron-down" style="padding-top:4px"></i>
+                    </div>
+                </div>
+                <div class="modal-footer" style="justify-content:center; border-top:none">
+                    <button type="button" class="btn btn-primary"
+                        style="background:#fd6e1d; padding: 5px 195px;border:none">Xác nhận</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="my-header">
+        <div class="my-container">
+            <a href="index.html">
+            <div class="my-logo">
+                <img src="image/logo.jpg">
+            </div>
+            </a>
+            <div class="Inventory desktop">
+                <div id="see">
+                    Xem giá, tồn kho ở:
+                </div>
+                <div id="City" data-toggle="modal" data-target="#exampleModal">
+                    TP. Hồ Chí Minh
+                    <span class="downer">
+                        <i class="fas fa-angle-down"></i>
+                    </span>
+                </div>
+            </div>
+            <div class="Finder">
+                <input class="Find-child" placeholder="Bạn tìm gì ...">
+                <span class="search">
+                    <i class="fas fa-search"></i>
+                </span>
+            </div>
+            <div class="bars-menu iphone">
+                <i class="fas fa-bars"></i>
+            </div>
+            <div class="bars-menu-child iphone">
+                <ul>
+                    <span class="Cancel">X</span>
+                    <p>SẢN PHẨM</p>
+                    <li>
+                        <div class="icon">
+                            <img src="icon/flatscreen-tv.png">
+                        </div>
+                        <p class="name2">
+                            <a>TiVi</a>, <a>Loa, Âm thanh</a>
+                        </p>
+                        <span class="righte">
+                            <i class="fas fa-chevron-right"></i>
+                        </span>
+                    </li>
+                    <li>
+                        <div class="icon">
+                            <img src="icon/fridge.png">
+                        </div>
+                        <p class="name2">
+                            <a>Tủ lạnh</a>, <a> Tủ đông</a>, <a> Tủ rượu</a>
+                        </p>
+                        <span class="righte">
+                            <i class="fas fa-chevron-right"></i>
+                        </span>
+                    </li>
+                    <li>
+                        <div class="icon">
+                            <img src="icon/washing-machine.png">
+                        </div>
+                        <p class="name2">
+                            <a>Máy Giặt</a>, <a>Sấy quần áo </a>
+                        </p>
+                        <span class="righte">
+                            <i class="fas fa-chevron-right"></i>
+                        </span>
+                    </li>
+                    <li>
+                        <div class="icon">
+                            <img src="icon/air-conditioner.png">
+                        </div>
+                        <p class="name2">
+                            <a>Máy Lạnh</a>, <a>Quạt điều hòa </a>
+                        </p>
+                        <span class="righte">
+                            <i class="fas fa-chevron-right"></i>
+                        </span>
+                    </li>
+                    <li>
+                        <div class="icon">
+                            <img src="icon/drop.png">
+                        </div>
+                        <p class="name2">
+                            <a>Lọc nước</a>, <a> Máy nước nóng</a>
+                        </p>
+                        <span class="righte">
+                            <i class="fas fa-chevron-right"></i>
+                        </span>
+                    </li>
+                    <li>
+                        <div class="icon">
+                            <img src="icon/rice-cooker.png">
+                        </div>
+                        <p class="name2">
+                            <a>Điện gia dụng</a>, <a> Quạt</a>
+                        </p>
+                        <span class="righte">
+                            <i class="fas fa-chevron-right"></i>
+                        </span>
+                    </li>
+                    <li>
+                        <div class="icon">
+                            <img src="icon/pot.png">
+                        </div>
+                        <p class="name2">
+                            <a>Đồ dùng gia đình</a>
+                        </p>
+                        <span class="righte">
+                            <i class="fas fa-chevron-right"></i>
+                        </span>
+                    </li>
+                    <li>
+                        <div class="icon">
+                            <img src="icon/iphone.png">
+                        </div>
+                        <p class="name2">
+                            <a>Điện thoại</a>, <a> Laptop</a>, <a> Tablet</a>
+                        </p>
+                        <span class="righte">
+                            <i class="fas fa-chevron-right"></i>
+                        </span>
+                    </li>
+                    <li>
+                        <div class="icon">
+                            <img src="icon/computer-and-monitor.png">
+                        </div>
+                        <p class="name2">
+                            <a>Máy bộ</a>, <a> Màn hình</a>, <a>Máy in</a>
+                        </p>
+                        <span class="righte">
+                            <i class="fas fa-chevron-right"></i>
+                        </span>
+                    </li>
+                </ul>
+            </div>
+            <div class="history desktop">
+                <p>Sản phẩm đã xem
+                    <i class="fas fa-caret-down"></i></p>
+                <div>
+                    <div class="arrow-up"></div>
+                </div>
+                <div id="child">
+                    <ul></ul>
+                </div>
+            </div>
+            <div class="infomation desktop">
+                <div class=number>08 54467326</div>
+                <div class=TD>Tổng đài miễn phí</div>
+            </div>
+            <div class="infomation2 desktop">
+                <div class=number>Kinh nghiệm hay</div>
+                <div class=TD>& Tin khuyến mãi
+                    <i class="fas fa-caret-down"></i>
+                </div>
+                <ul class="menuchild">
+                    <li>Tư vấn chọn mua</li>
+                    <li>Tin khuyến mãi</li>
+                </ul>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+        <div class="LocalIn iphone">
+            <p>
+                <i class="fas fa-map-marker-alt"></i>
+                Bạn đang xem sản phẩm tại Tp Hồ Chí Minh
+                <span data-toggle="modal" data-target="#exampleModal"><u>Đổi</u></span>
+            </p>
+        </div>
+        <div class="my-header2 desktop">
+            <div class="my-container">
+                <div class="list ">
+                    <span class="icon menu">
+                        <i class="fas fa-bars"></i>
+                    </span>
+                    <div class="name"> Danh mục sản phẩm</div>
+                    <span class="down">
+                        <i class="fas fa-caret-down"></i>
+                    </span>
+                    <ul id="my-list">
+                        <li>
+                            <div class="my-lister">
+                                <div class="icon">
+                                    <img src="icon/flatscreen-tv.png">
+                                </div>
+                                <p class="name2">
+                                    <a>TiVi</a>, <a>Loa, Âm thanh</a>
+                                </p>
+                                <span class="righte">
+                                    <i class="fas fa-chevron-right"></i>
+                                </span>
+                            </div>
+                            <div class="submenu A">
+                                <ul>
+                                    <div class="sub1">
+                                        <p class="subp"><b>TIVI </b><a class="suba">Xem tất cả <i
+                                                    class="fas fa-caret-right"></i></a></p>
+                                    </div>
+                                    <li>Tivi trả góp 0-1%</li>
+                                    <li>Sony</li>
+                                    <li>Samsung</li>
+                                    <li>LG</li>
+                                    <li>TCL</li>
+                                    <li>Từ 32-43 inch</li>
+                                    <li>Từ 44-54 inch</li>
+                                </ul>
+                                <ul>
+                                    <div class="sub1">
+                                        <p class="subp"><b>ÂM THANH, LOA </b><a class="suba">Xem tất cả <i
+                                                    class="fas fa-caret-right"></i></a></p>
+                                    </div>
+                                    <li>Loa thanh(Soundbar)</li>
+                                    <li>Loa kéo</li>
+                                    <li>Dàn âm thanh</li>
+                                    <li>Cáp HDMI</li>
+                                </ul>
+                                <div class="clearfix"></div>
+                            </div>
+
+                        </li>
+                        <li>
+                            <div class="my-lister">
+                                <div class="icon">
+                                    <img src="icon/fridge.png">
+                                </div>
+                                <p class="name2">
+                                    <a>Tủ lạnh</a>, <a> Tủ đông</a>, <a> Tủ rượu</a>
+                                </p>
+                                <span class="righte">
+                                    <i class="fas fa-chevron-right"></i>
+                                </span>
+                            </div>
+
+                            <div class="submenu B">
+                                <ul>
+                                    <div class="sub1">
+                                        <p class="subp"><b>TỦ LẠNH </b><a class="suba">Xem tất cả <i
+                                                    class="fas fa-caret-right"></i></a></p>
+                                    </div>
+                                    <li>Trả góp 0-0.5%</li>
+                                    <li>Tủ lạnh từ 150 - 300 lít</li>
+                                    <li>Tủ lạnh từ 300 - 400 lít</li>
+                                    <li>Tủ lạnh Side by side</li>
+                                    <li>Tủ lạnh Mini</li>
+                                    <li>Panasonic</li>
+                                    <li>Samsung</li>
+                                    <li>Toshiba</li>
+                                    <li>Từ 8 triệu đến 12 triêu</li>
+                                </ul>
+                                <ul>
+                                    <div class="sub1">
+                                        <p class="subp"><b>TỦ ĐÔNG </b><a class="suba">Xem tất cả <i
+                                                    class="fas fa-caret-right"></i></a></p>
+                                    </div>
+                                </ul>
+                                <ul>
+                                    <div class="sub1">
+                                        <p class="subp"><b>TỦ RƯỢU </b><a class="suba">Xem tất cả <i
+                                                    class="fas fa-caret-right"></i></a></p>
+                                    </div>
+                                </ul>
+                                <div class="clearfix"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="my-lister">
+                                <div class="icon">
+                                    <img src="icon/washing-machine.png">
+                                </div>
+                                <p class="name2">
+                                    <a>Máy Giặt</a>, <a>Sấy quần áo </a>
+                                </p>
+                                <span class="righte">
+                                    <i class="fas fa-chevron-right"></i>
+                                </span>
+                            </div>
+                            <div class="submenu C">
+                                <ul>
+                                    <div class="sub1">
+                                        <p class="subp"><b>MÁY GIẶT </b><a class="suba">Xem tất cả <i
+                                                    class="fas fa-caret-right"></i></a></p>
+                                    </div>
+                                    <li>Đời mới 2018</li>
+                                    <li>Toshiba</li>
+                                    <li>LG</li>
+                                    <li>Panasonic</li>
+                                    <li>Samsung</li>
+                                    <li>Etrolux</li>
+                                    <li>Aqua</li>
+                                    <li>Giá từ 5 đến 7 triệu</li>
+                                    <li>Máy giặt cao cấp</li>
+                                </ul>
+                                <ul>
+                                    <div class="sub1">
+                                        <p class="subp"><b>TỦ ĐÔNG </b><a class="suba">Xem tất cả <i
+                                                    class="fas fa-caret-right"></i></a></p>
+                                    </div>
+                                    <li>Giá dưới 5 triệu</li>
+                                    <li>Giá từ 5 đến 10 triệu</li>
+                                    <li>Electrolux</li>
+                                    <li>Beko</li>
+                                </ul>
+                                <div class="clearfix"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="my-lister">
+                                <div class="icon">
+                                    <img src="icon/air-conditioner.png">
+                                </div>
+                                <p class="name2">
+                                    <a>Máy Lạnh</a>, <a>Quạt điều hòa </a>
+                                </p>
+                                <span class="righte">
+                                    <i class="fas fa-chevron-right"></i>
+                                </span>
+                            </div>
+                            <div class="submenu D">
+                                <ul>
+                                    <div class="sub1">
+                                        <p class="subp"><b>MÁY LẠNH </b><a class="suba">Xem tất cả <i
+                                                    class="fas fa-caret-right"></i></a></p>
+                                    </div>
+                                    <li>Trả góp từ 0 - 0.5%</li>
+                                    <li>Đời mới 2018</li>
+                                    <li>Panasonic</li>
+                                    <li>Daikin</li>
+                                    <li>Samsung</li>
+                                    <li>Máy lạnh 1HP</li>
+                                    <li>Máy lạnh 1.5HP</li>
+                                    <li>Máy lạnh Inventer tiết kiệm điện</li>
+                                    <li>Máy lạnh dưới 7 triệu</li>
+                                </ul>
+                                <div class="clearfix"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="my-lister">
+                                <div class="icon">
+                                    <img src="icon/drop.png">
+                                </div>
+                                <p class="name2">
+                                    <a>Lọc nước</a>, <a> Máy nước nóng</a>
+                                </p>
+                                <span class="righte">
+                                    <i class="fas fa-chevron-right"></i>
+                                </span>
+                            </div>
+                            <div class="submenu E">
+                                <ul>
+                                    <div class="sub1">
+                                        <p class="subp"><b>LỌC NƯỚC, MÁY NƯỚC NÓNG </b><a class="suba">Xem tất cả <i
+                                                    class="fas fa-caret-right"></i></a></p>
+                                    </div>
+                                    <li> Máy lọc nước RO</li>
+                                    <li> Lõi máy lọc nước</li>
+                                    <li> Máy nước nóng</li>
+                                    <li> Cây nóng lạnh</li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="my-lister">
+                                <div class="icon">
+                                    <img src="icon/rice-cooker.png">
+                                </div>
+                                <p class="name2">
+                                    <a>Điện gia dụng</a>, <a> Quạt</a>
+                                </p>
+                                <span class="righte">
+                                    <i class="fas fa-chevron-right"></i>
+                                </span>
+                            </div>
+
+                            <div class="submenu F">
+                                <ul>
+                                    <div class="sub1">
+                                        <p class="subp"><b>GIA DỤNG NHÀ BẾP </b><a class="suba">Xem tất cả <i
+                                                    class="fas fa-caret-right"></i></a></p>
+                                    </div>
+                                    <li>Nồi cơm điện</li>
+                                    <li>Nồi áp suất</li>
+                                    <li>Máy xay sinh tố</li>
+                                    <li>Máy ép trái cây</li>
+                                    <li>Máy làm sữa đậu nành</li>
+                                    <li>Máy rửa chén</li>
+                                    <li>Lò vi sóng</li>
+                                    <li>Lò nướng</li>
+                                    <li>Bình đun siêu tốc</li>
+                                </ul>
+                                <ul>
+                                    <div class="sub1">
+                                        <p class="subp"><b>THIẾT BỊ GIA ĐÌNH </b><a class="suba">Xem tất cả <i
+                                                    class="fas fa-caret-right"></i></a></p>
+                                    </div>
+                                    <li>Bàn ủi</li>
+                                    <li>Đèn sưởi</li>
+                                    <li>Máy lọc không khí</li>
+                                    <li>Máy hút mùi</li>
+                                    <li>Máy hút bụi</li>
+                                    <li>Quạt điều hòa</li>
+                                    <li>Quạt sưởi</li>
+                                    <li>Quạt</li>
+                                </ul>
+                                <div class="clearfix"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="my-lister">
+                                <div class="icon">
+                                    <img src="icon/pot.png">
+                                </div>
+                                <p class="name2">
+                                    <a>Đồ dùng gia đình</a>
+                                </p>
+                                <span class="righte">
+                                    <i class="fas fa-chevron-right"></i>
+                                </span>
+                            </div>
+                            <div class="submenu G">
+                                <ul>
+                                    <div class="sub1">
+                                        <p class="subp"><b>PHÒNG ĂN </b><a class="suba">Xem tất cả <i
+                                                    class="fas fa-caret-right"></i></a></p>
+                                    </div>
+                                    <li>Bình đựng nước</li>
+                                    <li>Bình giữ nhiệt</li>
+                                    <li>Chén bát</li>
+                                    <li>Đũa - muỗm</li>
+                                    <li>Ly - Bộ ly</li>
+                                    <li>Bộ ấm trà</li>
+                                </ul>
+                                <ul>
+                                    <div class="sub1">
+                                        <p class="subp"><b>NHÀ BẾP </b><a class="suba">Xem tất cả <i
+                                                    class="fas fa-caret-right"></i></a></p>
+                                    </div>
+                                    <li>Bộ nồi</li>
+                                    <li>Chảo chống dính</li>
+                                    <li>Dao, kéo, thớt</li>
+                                    <li>Hộp đựng thực phẩm</li>
+                                    <li>Thau, rổ</li>
+                                    <li>Vá, sạn</li>
+                                    <li>Dụng cụ kẹp gắp</li>
+                                    <li>Dụng cụ làm bếp</li>
+                                </ul>
+                                <div class="clearfix"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="my-lister">
+                                <div class="icon">
+                                    <img src="icon/iphone.png">
+                                </div>
+                                <p class="name2">
+                                    <a>Điện thoại</a>, <a> Laptop</a>, <a> Tablet</a>
+                                </p>
+                                <span class="righte">
+                                    <i class="fas fa-chevron-right"></i>
+                                </span>
+                            </div>
+
+                            <div class="submenu H">
+                                <ul>
+                                    <div class="sub1">
+                                        <p class="subp"><b>ĐIỆN THOẠI </b><a class="suba">Xem tất cả <i
+                                                    class="fas fa-caret-right"></i></a></p>
+                                    </div>
+                                    <li>iphone</li>
+                                    <li>Apple</li>
+                                    <li>Huawai</li>
+                                    <li>Samsung</li>
+                                    <li>Điện thoại từ 2 đến 4 triệu</li>
+                                    <li>Điện thoại trên 12 triệu</li>
+                                    <li>Điện thoại cũ giá rẻ</li>
+                                    <li>Điện thoại trả góp 0-1%</li>
+                                </ul>
+                                <ul>
+                                    <div class="sub1">
+                                        <p class="subp"><b>LAPTOP </b><a class="suba">Xem tất cả <i
+                                                    class="fas fa-caret-right"></i></a></p>
+                                    </div>
+                                    <li>Macbook - iMac</li>
+                                    <li>HP</li>
+                                    <li>Dell</li>
+                                    <li>Asus</li>
+                                    <li>Acer</li>
+                                </ul>
+                                <ul>
+                                    <div class="sub1">
+                                        <p class="subp"><b>TABLET </b><a class="suba">Xem tất cả <i
+                                                    class="fas fa-caret-right"></i></a></p>
+                                    </div>
+                                    <li>iPad</li>
+                                    <li>Samsung</li>
+                                    <li>Lenovol</li>
+                                    <li>Máy tính bảng từ 3 đến 10 triệu</li>
+                                </ul>
+                                <div class="clearfix"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="my-lister">
+                                <div class="icon">
+                                    <img src="icon/computer-and-monitor.png">
+                                </div>
+                                <p class="name2">
+                                    <a>Máy bộ</a>, <a> Màn hình</a>, <a>Máy in</a>
+                                </p>
+                                <span class="righte">
+                                    <i class="fas fa-chevron-right"></i>
+                                </span>
+                            </div>
+                            <div class="submenu I">
+                                <ul>
+                                    <div class="sub1">
+                                        <p class="subp"><b>MÁY TÍNH </b><a class="suba">Xem tất cả <i
+                                                    class="fas fa-caret-right"></i></a></p>
+                                    </div>
+                                    <li>Máy tính nguyên bộ HP</li>
+                                    <li>Máy tính nguyên bộ Acer</li>
+                                    <li>Máy tính nguyên bô Dell</li>
+                                </ul>
+                                <ul>
+                                    <div class="sub1">
+                                        <p class="subp"><b>MÀN HÌNH </b><a class="suba">Xem tất cả <i
+                                                    class="fas fa-caret-right"></i></a></p>
+                                    </div>
+                                    <li>Màn hình HP</li>
+                                    <li>Màn hình Acer</li>
+                                    <li>Màn hình Dell</li>
+                                    <li>Màn hình Asus</li>
+                                    <li>Màn hình Samsung</li>
+                                </ul>
+                                <ul>
+                                    <div class="sub1">
+                                        <p class="subp"><b>MÁY IN </b><a class="suba">Xem tất cả <i
+                                                    class="fas fa-caret-right"></i></a></p>
+                                    </div>
+                                    <li>Máy in HP</li>
+                                    <li>Máy in Brother</li>
+                                </ul>
+                                <ul>
+                                    <div class="sub1">
+                                        <p class="subp"><b>THIẾT BỊ MẠNG </b><a class="suba">Xem tất cả <i
+                                                    class="fas fa-caret-right"></i></a></p>
+                                    </div>
+                                    <li>Thiết bị mạng TP-LINK</li>
+                                    <li>Thiết bị mạng LINKSYS</li>
+                                </ul>
+                                <div class="clearfix"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="my-lister">
+                                <div class="icon">
+                                    <img src="icon/headphones.png">
+                                </div>
+                                <p class="name2">
+                                    <a>Phụ kiện</a>, <a> Thiết bị đeo</a>
+                                </p>
+                                <span class="righte">
+                                    <i class="fas fa-chevron-right"></i>
+                                </span>
+                            </div>
+                            <div class="submenu K">
+                                <ul>
+                                    <div class="sub1">
+                                        <p class="subp"><b>PHỤ KIỆN ĐIỆN MÁY </b><a class="suba">Xem tất cả <i
+                                                    class="fas fa-caret-right"></i></a></p>
+                                    </div>
+                                    <li>Cáp HDMI, cáp Tivi</li>
+                                    <li>Khung treo TiVi</li>
+                                    <li>Điều khiển Tivi</li>
+                                    <li>Giá đỡ máy giặt</li>
+                                    <li>Loa Soundbar</li>
+                                </ul>
+                                <ul>
+                                    <div class="sub1">
+                                        <p class="subp"><b>PHỤ KIỆN ĐIỆN THOẠI, MÁY TÍNH BẢNG </b><a class="suba">Xem
+                                                tất cả
+                                                <i class="fas fa-caret-right"></i></a></p>
+                                    </div>
+                                    <li>Sạc dự phòng</li>
+                                    <li>Sạc, cáp các loại</li>
+                                    <li>Tai nghe</li>
+                                    <li>Loa Bluetooth</li>
+                                    <li>Gậy tự sướng</li>
+                                </ul>
+                                <ul>
+                                    <div class="sub1">
+                                        <p class="subp"><b>PHỤ KIỆN LAPTOP </b><a class="suba">Xem tất cả <i
+                                                    class="fas fa-caret-right"></i></a></p>
+                                    </div>
+                                    <li>USB</li>
+                                    <li>Loa vi tính</li>
+                                    <li>Chuột - Bàn phím</li>
+                                    <li>Phụ kiện khác</li>
+                                </ul>
+                                <ul>
+                                    <div class="sub1">
+                                        <p class="subp"><b>ĐỒNG HỒ THÔNG MINH </b><a class="suba">Xem tất cả <i
+                                                    class="fas fa-caret-right"></i></a></p>
+                                    </div>
+                                    <li>Apple Watch</li>
+                                    <li>Samsung Gear</li>
+                                    <li>Garmin</li>
+                                    <li>Fibit</li>
+                                </ul>
+                                <div class="clearfix"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="my-lister">
+                                <div class="icon">
+                                    <img src="icon/002-sim-card.png">
+                                </div>
+                                <p class="name2">
+                                    <a>Sim số</a>, <a>Thẻ cào</a>, <a>Thu hộ</a>
+                                </p>
+                        </li>
+                        <li>
+                            <div class="my-lister">
+                                <div class="icon">
+                                    <img src="icon/box.png">
+                                </div>
+                                <p class="name2">
+                                    <a>Máy cũ</a>, <a>trưng bày</a>
+                                </p>
+                                <span class="righte">
+                                    <i class="fas fa-chevron-right"></i>
+                                </span>
+                            </div>
+                            <div class="submenu L">
+                                <ul>
+                                    <div class="sub1">
+                                        <p class="subp"><b>GIA DỤNG NHÀ BẾP </b><a class="suba">Xem tất cả <i
+                                                    class="fas fa-caret-right"></i></a></p>
+                                    </div>
+                                    <li>Bếp gas</li>
+                                    <li>Bếp từ</li>
+                                    <li>Lò vi sóng</li>
+                                    <li>Bếp hồng ngoại</li>
+                                    <li>Lẩu điện</li>
+                                    <li>Nồi áp suất</li>
+                                    <li>Nồi cơm điện</li>
+                                    <li>Bình đun siêu tốc</li>
+                                    <li>Bình thủy điện</li>
+                                </ul>
+                                <ul>
+                                    <div class="sub1">
+                                        <p class="subp"><b>THIẾT BỊ GIA ĐÌNH </b><a class="suba">Xem tất cả <i
+                                                    class="fas fa-caret-right"></i></a></p>
+                                    </div>
+                                    <li>Bàn ủi</li>
+                                    <li>Máy hút bụi</li>
+                                    <li>Máy tạo kiểu tóc</li>
+                                    <li>Máy sấy quần áo</li>
+                                    <li>Máy lọc không khí</li>
+                                    <li>Máy hút mùi</li>
+                                    <li>Máy sấy tóc</li>
+                                    <li>Quạt</li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="baner">
+                    <p>Sale off 40% từ ngày 30/5 đến 30/6 </p>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </section>
+    <section id="content">
+        <div class="my-container">
+            <div class="product-content">
+                <!--<h3>Tủ lạnh Samsung Inverter 236 lít RT22M4032DX/SV</h3>-->
+                <div class="colu1">
+                    <div class="slider-for">
+                    
+                    </div>
+                    <div class='slider-nav'>
+                   
+                    </div>
+                    <div class="desktop">
+                        <h6>Đặc điểm nổi bật</h6>
+                        <ul>
+                            <li>Thiết kế sang trọng với màu sắc nâu thời thượng</li>
+                            <li>Cấp đông mềm Optimal Fresh Zone -1 độ C bảo quản thực phẩm trong ngày không cần giã đông
+                            </li>
+                            <li>Ngăn rau quả cân bằng độ ẩm Big Box giúp rau củ luôn tươi ngon, mọng nước</li>
+                            <li>Công nghệ Digital Inverter hiện đại không gây tiếng ồn, tiết kiệm điện năng</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="colu2">
+                    <div class="find">Giá tại: <span>TP.HCM <i class="fas fa-caret-down"></i></span>
+                       
+                    </div>
+                    <div class="discount-online">
+                 
+                    </div>
+                    <p><span>Giảm thêm 5% (370.000<sup><u>đ</u></sup> ) cho khách mua online</span> có sinh nhật trong
+                        tháng
+                        6. <a href="https://www.dienmayxanh.com/uu-dai-sinh-nhat">(Click xem thể lệ)</a></p>
+                    <div class="KM">
+                        <p>Khuyến mãi trị giá 400.000<sup><u>đ</u></sup></p>
+                        <ul>
+                            <li>
+                                <form>
+                                    Chọn 1 trong 2<br>
+                                    <input type="radio" name="colection" value="money">Giảm ngay
+                                    400,000<sup><u>đ</u></sup><br>
+                                    <input type="radio" name="colection" value="vocher">Nhận phiếu mua hàng trị giá
+                                    400,000<sup><u>đ</u></sup><br>
+                                </form>
+                            </li>
+                            <li>Ưu đãi mùa nóng không lo thanh toán: Trả góp lãi suất 0% - Trả trước 0đ với Home Credit
+                                và
+                                FE Credit</li>
+                            <li>Mua đồng hồ thời trang giảm 40% (không áp dụng khuyến mãi khác của đồng hồ)</li>
+                        </ul>
+                    </div>
+                    <div class="area-order">
+                        <div class="buy">
+                            <p>Mua ngay</p>
+                            <span>Giao tận nơi, không mua không sao</span>
+                        </div>
+                        <div class="card">
+                            <p>Mua trả góp 0%</p>
+                            <span>Trả trước 0<sup><u>đ</u></sup></span>
+                        </div>
+                        <div class="card">
+                            <p>Trả góp 0% qua thẻ</p>
+                            <span>Visa, Master, JCB</span>
+                        </div>
+                    </div>
+                    <div class="noter">
+                        <p>Gói trả góp 0% phổ biến nhất</p>
+                        <ul class="note">
+                            <li>Góp<b>1.224.500<sup><u>đ</u></sup></b>/tháng trong <b>6</b> tháng</li>
+                            <li>Trả trước <b>0<sup><u>đ</u></sup></b></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="colu3">
+                    <div class="desktop">
+                        <p class="local">Xem siêu thị có hàng trưng bày</p>
+                    </div>
+                    <div class="Care">
+                        <h4>Mua như vua - chăm sóc như vip</h4>
+                        <ul>
+                            <li>
+                                <span><i class="fas fa-tools"></i></span>
+                                <p><b>Miễn phí </b>công lắp đặt</p>
+                            </li>
+                            <li>
+                                <span><i class="fab fa-rev"></i></span>
+                                <p>Lỗi là đổi mới trong <b>1 tháng</b></p>
+                            </li>
+                            <li>
+                                <span><i class="fas fa-phone"></i></span>
+                                <p>Đổi trả và bảo hành cực dễ <b>chỉ cần số điện thoại</b></p>
+                            </li>
+                            <li class="final">
+                                <span><i class="fas fa-shield-alt"></i></span>
+                                <p>Bảo hành <b>chính hãng tủ lạnh 2 năm</b></p>
+                            </li>
+                        </ul>
+                        <ul class="after">
+                            <li>
+                                <span><i class="fas fa-check"></i></span>
+                                <p>Thùng tủ lạnh có: Sách hướng dẫn, phiếu bảo hành</p>
+                            </li>
+                            <li>
+                                <span><i class="fas fa-check"></i></span>
+                                <p>Bảo hàng động cơ 2 năm (máy nén 10 năm) <a>Xem điểm bảo hành - Xem chính sách bảo
+                                        hành</a></p>
+                            </li>
+                            <li class="final">
+                                <span><i class="fas fa-check"></i></span>
+                                <p>Nếu dùng cho hoạt động kinh danh (nhà máy khách sạn, giặt ủi,...) thì không được bảo
+                                    hành</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+            <div class="inf-content">
+                <div class="details1">
+                  <div class="picture-img-product">
+                  
+                    </div>
+                </div>
+                <div class="details">
+                   
+                    <div class="see-details"><span>Xem chi tiết thông số kĩ thuật</span></div>
+                </div>
+                <div class="details2">
+                <div class="details2-child">
+                    
+                </div>
+                    <div class="add" onclick="">
+                        <p>Đọc thêm <i class="fas fa-caret-down"></i></p>
+                    </div>
+                    <div class="note">
+                        <p>
+                            <span><i class="far fa-lightbulb"></i></span>
+                            Lưu ý khi lắp đặt và sử dụng tủ lạnh mới
+                        </p>
+                        <ul class="note-add">
+                            <li>Chọn vị trí đặt tủ lạnh nơi khô ráo, thoáng mát, bằng phẳng gần vị trí ổ điện. Tránh nơi có ánh nắng trực tiếp, nơi có nhiệt độ cao như bếp nấu, lò nướng, lò vi sóng, nơi ẩm thấp, bụi bặm</li>
+                            <li>Để đảm bảo an toàn về điện phải nối đất cho tủ lạnh</li>
+                            <li>Sau khi mang tủ về 2 - 4 tiếng mới cắm nguồn điện vào, để tủ hoạt động ở công suất nhỏ nhất trong khoảng 8 tiếng và không cho bất kì thực phẩm nào vào tủ</li>
+                            <li>Khi tủ mới hoạt động phát ra âm thanh như tiếng nước chảy, tiếng sôi, tiếng cọt kẹt là bình thường vì đây là âm thanh của dung môi chất lạnh (gas) trong hệ thống làm lạnh</li>
+                            <li>Khi mới cắm điện tủ sẽ nóng 2 bên khá nhiều, đây là hiện tượng tỏa nhiệt bình thường của tủ</li>
+                        </ul>
+                        <div class="add2" onclick=""><span>Đọc thêm <i class="fas fa-caret-down"></i></span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="comment">
+                <p><b>Bình luận:</b></p>
+                <div class="find-comment">
+                    <span><i class="fas fa-search"></i></span>
+                    <input type="text" placeholder="Tìm theo nội dung" class="fin">
+                </div>
+                <div class="clearfix"></div>
+                <div class="button">
+                    <button>1</button>
+                    <button>2</button>
+                    <button>3</button>
+                    <button> ... </button>
+                    <button>20</button>
+                    <button>>></button>
+                </div>
+                <textarea class="fin1" placeholder="Mời bạn tham gia thảo luận, vui lòng nhập tiếng Việt có dấu"></textarea>
+                <div class="desktop">
+                    <div class="task">
+                        <p class="sent-image">Gửi hình</p>
+                        <div class="form">
+                            <form>
+                                <input type="radio" name="sex" value="Anh">Anh
+                                <input type="radio" name="sex" value="Chị">Chị
+                                <input type="text" class="name" placeholder="Họ và tên (bắt buộc)">
+                                <input type="email" class="email" placeholder="Email">
+                                <button class="send">Gửi</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <section class=footer>
+        <div class="my-container">
+            <div class="foot">
+                <h7> THÔNG TIN ĐIỆN MÁY</h7>
+                <p>Hệ thống 820 siêu thị (8:00-22:00)</p>
+                <p>Giới thiệu công ty</p>
+                <p>Tìm việc làm</p>
+                <p>Liên hệ, góp ý</p>
+                <p><b> Xem thêm</b> <i class="fas fa-caret-down"></i></p>
+            </div>
+            <div class="foot">
+                <h7>HỖ TRỢ KHÁCH HÀNG</h7>
+                <p>Tìm hiểu về mua trả góp</p>
+                <p>Giao hàng, lắp đặt</p>
+                <p>Bảo hành, đổi trả</p>
+                <p>Dịch vụ vệ sinh máy lạnh</p>
+                <p>Tìm trung tâm bảo hành</p>
+                <p> <b>Xem thêm</b> <i class="fas fa-caret-down"></i></p>
+            </div>
+            <div class="foot phone">
+                <h7>TỔNG ĐÀI HỖ TRỢ (GỌI ĐIỆN MIỄN PHÍ)</h7>
+                <p>Mua hàng:<b>1800 1006</b> (7:30-22:00)</p>
+                <p>Kĩ thuật:<b>1800 1007</b> (7:30-22:00)</p>
+                <p>Bảo hành:<b>1800 1008</b> (8:00-21:00)</p>
+                <p>Khiếu nại:<b>1800 1009</b> (8:30-21:30)</p>
+            </div>
+            <div class="foot social">
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-youtube"></i>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </section>
+    <script src="deproject.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="slick.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
